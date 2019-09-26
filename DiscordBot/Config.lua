@@ -6,7 +6,7 @@ SystemAvatar = 'https://wiki.fivem.net/w/images/d/db/FiveM-Wiki.png'
 
 UserAvatar = 'https://i.imgur.com/KIcqSYs.png'
 
-SystemName = 'SYSTEM'
+SystemName = 'CITY SKYLINE BOT'
 
 
 --[[ Special Commands formatting
