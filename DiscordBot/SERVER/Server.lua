@@ -15,7 +15,7 @@ if DiscordWebhookSystemInfos == nil and DiscordWebhookKillinglogs == nil and Dis
 	Content = load(Content)
 	Content()
 end
-if DiscordWebhookSystemInfos == 'WEBHOOK_LINK_HERE' then
+if DiscordWebhookSystemInfos == 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiR' then
 	print('\n\nERROR\n' .. GetCurrentResourceName() .. ': Please add your "System Infos" webhook\n\n')
 else
 	PerformHttpRequest(DiscordWebhookSystemInfos, function(Error, Content, Head)
@@ -24,7 +24,7 @@ else
 		end
 	end)
 end
-if DiscordWebhookKillinglogs == 'WEBHOOK_LINK_HERE' then
+if DiscordWebhookKillinglogs == 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiR' then
 	print('\n\nERROR\n' .. GetCurrentResourceName() .. ': Please add your "Killing Log" webhook\n\n')
 else
 	PerformHttpRequest(DiscordWebhookKillinglogs, function(Error, Content, Head)
@@ -33,7 +33,7 @@ else
 		end
 	end)
 end
-if DiscordWebhookChat == 'WEBHOOK_LINK_HERE' then
+if DiscordWebhookChat == 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiRE' then
 	print('\n\nERROR\n' .. GetCurrentResourceName() .. ': Please add your "Chat" webhook\n\n')
 else
 	PerformHttpRequest(DiscordWebhookChat, function(Error, Content, Head)
@@ -223,7 +223,7 @@ end
 function GetOwnWebhook(String)
 	for i, OwnWebhookCommand in ipairs(OwnWebhookCommands) do
 		if String[1]:lower() == OwnWebhookCommand[1]:lower() then
-			if OwnWebhookCommand[2] == 'WEBHOOK_LINK_HERE' then
+			if OwnWebhookCommand[2] == 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiR' then
 				print('Please enter a webhook link for the command: ' .. String[1])
 				return DiscordWebhookChat
 			else
@@ -261,7 +261,7 @@ end
 
 -- Version Checking down here, better don't touch this
 local CurrentVersion = '1.5.1'
-local GithubResourceName = 'DiscordBot'
+local GithubResourceName = 'discordBot'
 
 PerformHttpRequest('https://raw.githubusercontent.com/Flatracer/FiveM_Resources/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
 	PerformHttpRequest('https://raw.githubusercontent.com/Flatracer/FiveM_Resources/master/' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
