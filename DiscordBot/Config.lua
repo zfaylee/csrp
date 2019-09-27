@@ -38,8 +38,8 @@ BlacklistedCommands = {
 
 -- These Commands will use their own webhook
 OwnWebhookCommands = {
-					  {'/AnotherCommand', 'WEBHOOK_LINK_HERE'},
-					  {'/AnotherCommand2', 'WEBHOOK_LINK_HERE'},
+					  {'/AnotherCommand', 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiR'},
+					  {'/AnotherCommand2', 'https://discordapp.com/api/webhooks/626851583132565504/EXfU7Itr8WWi6dnwjZW7F9sE-PGFAUX1eLwForBMle7Hfhir70Oahhv9aFT2YeUeAkiR'},
 					 }
 
 -- These Commands will be sent as TTS messages
